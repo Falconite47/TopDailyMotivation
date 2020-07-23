@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin res {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin five {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #181818;
+    padding: 3rem 5rem;
+
+       @include res {
+            padding: 2rem 1rem;
+       }
+
+       @include five {
+           padding: 0rem;
+       }
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 7rem;
+    }
+
+    h1 {
+        color: white;
+    }
+}
+
+.body {
+    margin: 1rem 0;
+    background: #262627;
+    padding: 2rem;
+    color: white;
+
+    @include res {
+        padding: 1rem;
+    }
+
+
+    @include five {
+        padding: 1rem;
+        background: none;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #979595;
+    }
+
+    .box {
+        background: #2c2c2c;
+        padding: 1.5rem;
+        position: relative;
+        display: flex;
+        margin: 1rem 0;
+
+        @include res {
+            padding: 1rem;
+            flex-direction: column;
+        }
+
+        img {
+            width: 15rem;
+            height: 10rem;
+
+            @include res {
+                width: auto;
+                height: 20rem;
+                padding-bottom: 1rem;
+            }
+
+        }
+
+        .text{
+            padding-left: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+               @include res {
+                    padding-left: 0;
+                    justify-content: start;
+               }
+
+
+            .title {
+                font-size: 2.7rem;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                line-height: 50px;
+                padding: 0 0 1rem 0;
+
+                @include five {
+                    font-size: 2rem;
+                    line-height: 37px;
+                }
+
+                &:hover {
+                    color: #aaaaaa;
+                    transition: ease-in-out 0.2s;
+                }
+            }
+
+            p{
+                font-weight: 400;
+                color: #b8b8b8;
+            }
+
+        }
+
+    }
+}

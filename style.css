@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #181818;
+  padding: 3rem 5rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 0rem;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar img {
+  height: 7rem;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.body {
+  margin: 1rem 0;
+  background: #262627;
+  padding: 2rem;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .body {
+    padding: 1rem;
+    background: none;
+  }
+}
+
+.body h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #979595;
+}
+
+.body .box {
+  background: #2c2c2c;
+  padding: 1.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  .body .box {
+    padding: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.body .box img {
+  width: 15rem;
+  height: 10rem;
+}
+
+@media (max-width: 900px) {
+  .body .box img {
+    width: auto;
+    height: 20rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.body .box .text {
+  padding-left: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .body .box .text {
+    padding-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.body .box .text .title {
+  font-size: 2.7rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 0 0 1rem 0;
+}
+
+@media (max-width: 500px) {
+  .body .box .text .title {
+    font-size: 2rem;
+    line-height: 37px;
+  }
+}
+
+.body .box .text .title:hover {
+  color: #aaaaaa;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.body .box .text p {
+  font-weight: 400;
+  color: #b8b8b8;
+}
+/*# sourceMappingURL=style.css.map */
